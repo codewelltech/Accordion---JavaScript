@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4c4c4c;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.accordion-container {
+  background: #fff;
+  width: 400px;
+  border: 1px solid #ccc;
+  margin-top: 80px;
+}
+.accord-header {
+  background: black;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+}
+.accord-content {
+  height: 120px;
+  overflow: hidden;
+  transition: all 0.35s ease-out;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.accord-body {
+  padding: 1rem 1.25rem;
+}
+.accord-item {
+  border-bottom: 1px solid #ccc;
+}
+.accord-item:last-of-type {
+  border: none;
+}
+.collapse {
+  height: 0px;
+  transform: scaleY(0);
+}
